@@ -69,14 +69,14 @@ MockingDevTool은 브라우저에서 직접 API 응답을 제어할 수 있는 U
 ### 1. handlers.ts 파일에 핸들러 추가
 
 ```javascript
-import { http, HttpResponse, delay } from 'msw';
+import { http, HttpResponse, delay } from "msw";
 
 // 기존 핸들러 배열에 새 핸들러 추가
 export const handlers = [
   // 기존 핸들러들...
 
   // 새 핸들러 추가
-  http.METHOD('*/api/v1/your-endpoint', async ({ request }) => {
+  http.METHOD("*/api/v1/your-endpoint", async ({ request }) => {
     // 현재 모킹 설정 가져오기
     const config = getMockConfig();
 
@@ -94,30 +94,30 @@ export const handlers = [
 
     // 요청 파라미터 추출 (필요한 경우)
     const url = new URL(request.url);
-    const someParam = url.searchParams.get('paramName');
+    const someParam = url.searchParams.get("paramName");
 
     // MockingDevTool 설정에 따라 실패 응답 반환
     if (config.shouldFail) {
       return HttpResponse.json(
         {
-          result: 'FAIL',
+          result: "FAIL",
           data: null,
           error: config.error,
         },
-        { status: parseInt(config.statusCode) || 500 },
+        { status: parseInt(config.statusCode) || 500 }
       );
     }
 
     // 성공 응답 반환
     return HttpResponse.json(
       {
-        result: 'SUCCESS',
+        result: "SUCCESS",
         data: {
           // 모의 응답 데이터
         },
         error: null,
       },
-      { status: 200 },
+      { status: 200 }
     );
   }),
 ];
@@ -182,8 +182,8 @@ const requestData = await request.json();
 페이지네이션을 모킹하려면:
 
 ```javascript
-const page = parseInt(url.searchParams.get('page') || '0');
-const size = parseInt(url.searchParams.get('size') || '10');
+const page = parseInt(url.searchParams.get("page") || "0");
+const size = parseInt(url.searchParams.get("size") || "10");
 
 // 페이지네이션 로직 구현
 const totalItems = mockData.length;
@@ -191,7 +191,7 @@ const totalPages = Math.ceil(totalItems / size);
 const paginatedData = mockData.slice(page * size, (page + 1) * size);
 
 return HttpResponse.json({
-  result: 'SUCCESS',
+  result: "SUCCESS",
   data: {
     content: paginatedData,
     currentPage: page,

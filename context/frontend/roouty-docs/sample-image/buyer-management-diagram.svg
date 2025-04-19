@@ -1,0 +1,125 @@
+<svg viewBox="0 0 900 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 -->
+  <rect width="900" height="800" fill="#f8f9fa" />
+  
+  <!-- 타이틀 -->
+  <text x="450" y="40" font-family="Arial" font-size="24" text-anchor="middle" fill="#333">거래처 관리 페이지 구조</text>
+  
+  <!-- Page 컴포넌트 -->
+  <rect x="50" y="70" width="800" height="90" rx="5" fill="#e9ecef" stroke="#343a40" stroke-width="2" />
+  <text x="450" y="110" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Page Component</text>
+  <text x="450" y="140" font-family="Arial" font-size="14" text-anchor="middle">전체 페이지 레이아웃 제어</text>
+  
+  <!-- 세 개의 주요 섹션 -->
+  <rect x="90" y="180" width="220" height="80" rx="5" fill="#d0ebff" stroke="#1971c2" stroke-width="2" />
+  <text x="200" y="210" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">HeaderSection</text>
+  <text x="200" y="240" font-family="Arial" font-size="12" text-anchor="middle">Text + Button 컴포넌트 조합</text>
+  
+  <rect x="340" y="180" width="220" height="80" rx="5" fill="#d3f9d8" stroke="#2b8a3e" stroke-width="2" />
+  <text x="450" y="210" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">FilterSection</text>
+  <text x="450" y="240" font-family="Arial" font-size="12" text-anchor="middle">필터링 옵션</text>
+  
+  <rect x="590" y="180" width="220" height="80" rx="5" fill="#fff3bf" stroke="#e67700" stroke-width="2" />
+  <text x="700" y="210" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">TableSectionCopy</text>
+  <text x="700" y="240" font-family="Arial" font-size="12" text-anchor="middle">데이터 테이블 표시</text>
+  
+  <!-- HeaderSection 핵심 구조 -->
+  <rect x="90" y="280" width="220" height="150" rx="5" fill="#e7f5ff" stroke="#1971c2" stroke-width="2" />
+  <text x="200" y="300" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">HeaderSection 핵심</text>
+  
+  <rect x="120" y="320" width="160" height="40" rx="5" fill="#bac8ff" stroke="#364fc7" stroke-width="1" />
+  <text x="200" y="345" font-family="Arial" font-size="12" text-anchor="middle">Text (페이지 제목)</text>
+  
+  <rect x="120" y="370" width="160" height="40" rx="5" fill="#bac8ff" stroke="#364fc7" stroke-width="1" />
+  <text x="200" y="395" font-family="Arial" font-size="12" text-anchor="middle">Button (거래처 등록)</text>
+  
+  <!-- FilterSection 핵심 구조 -->
+  <rect x="340" y="280" width="220" height="280" rx="5" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2" />
+  <text x="450" y="300" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">FilterSection 핵심</text>
+  
+  <!-- UI 부분 -->
+  <rect x="360" y="320" width="180" height="120" rx="5" fill="#8ce99a" stroke="#2b8a3e" stroke-width="1" />
+  <text x="450" y="340" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">UI 구조</text>
+  <rect x="380" y="350" width="140" height="30" rx="3" fill="#ebfbee" stroke="#2b8a3e" stroke-width="1" />
+  <text x="450" y="370" font-family="Arial" font-size="12" text-anchor="middle">Descriptions</text>
+  <rect x="380" y="390" width="140" height="30" rx="3" fill="#ebfbee" stroke="#2b8a3e" stroke-width="1" />
+  <text x="450" y="410" font-family="Arial" font-size="12" text-anchor="middle">Descriptions.Row</text>
+  <rect x="380" y="430" width="140" height="30" rx="3" fill="#ebfbee" stroke="#2b8a3e" stroke-width="1" />
+  <text x="450" y="450" font-family="Arial" font-size="12" text-anchor="middle">Descriptions.Item</text>
+  
+  <!-- 로직 부분 -->
+  <rect x="360" y="450" width="180" height="90" rx="5" fill="#63e6be" stroke="#0b7285" stroke-width="1" />
+  <text x="450" y="470" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">상태 관리</text>
+  <rect x="380" y="480" width="140" height="30" rx="3" fill="#e3fafc" stroke="#0b7285" stroke-width="1" />
+  <text x="450" y="500" font-family="Arial" font-size="12" text-anchor="middle">useBuyerFilter</text>
+  <rect x="380" y="520" width="140" height="30" rx="3" fill="#e3fafc" stroke="#0b7285" stroke-width="1" />
+  <text x="450" y="540" font-family="Arial" font-size="12" text-anchor="middle">filterStoreCreator</text>
+  
+  <!-- TableSection 핵심 구조 -->
+  <rect x="590" y="280" width="220" height="280" rx="5" fill="#ffec99" stroke="#e67700" stroke-width="2" />
+  <text x="700" y="300" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">TableSection 핵심</text>
+  
+  <!-- UI 부분 -->
+  <rect x="610" y="320" width="180" height="120" rx="5" fill="#ffd43b" stroke="#e67700" stroke-width="1" />
+  <text x="700" y="340" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">UI 구조</text>
+  <rect x="630" y="350" width="140" height="30" rx="3" fill="#fff9db" stroke="#e67700" stroke-width="1" />
+  <text x="700" y="370" font-family="Arial" font-size="12" text-anchor="middle">TableBase</text>
+  <rect x="630" y="390" width="140" height="30" rx="3" fill="#fff9db" stroke="#e67700" stroke-width="1" />
+  <text x="700" y="410" font-family="Arial" font-size="12" text-anchor="middle">TableBase.Toolbar</text>
+  <rect x="630" y="430" width="140" height="30" rx="3" fill="#fff9db" stroke="#e67700" stroke-width="1" />
+  <text x="700" y="450" font-family="Arial" font-size="12" text-anchor="middle">BaseTable</text>
+  
+  <!-- 로직 부분 -->
+  <rect x="610" y="450" width="180" height="90" rx="5" fill="#ffa94d" stroke="#d9480f" stroke-width="1" />
+  <text x="700" y="470" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">상태 관리</text>
+  <rect x="630" y="480" width="140" height="30" rx="3" fill="#fff4e6" stroke="#d9480f" stroke-width="1" />
+  <text x="700" y="500" font-family="Arial" font-size="12" text-anchor="middle">useBuyerSort</text>
+  <rect x="630" y="520" width="140" height="30" rx="3" fill="#fff4e6" stroke="#d9480f" stroke-width="1" />
+  <text x="700" y="540" font-family="Arial" font-size="12" text-anchor="middle">sorterStoreCreator</text>
+  
+  <!-- Store Creator 패턴 설명 -->
+  <rect x="200" y="580" width="500" height="180" rx="5" fill="#f1f3f5" stroke="#495057" stroke-width="2" />
+  <text x="450" y="600" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Store Creator 패턴</text>
+  
+  <rect x="220" y="620" width="460" height="60" rx="5" fill="#dee2e6" stroke="#495057" stroke-width="1" />
+  <text x="450" y="635" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">filterStoreCreator</text>
+  <text x="450" y="655" font-family="Arial" font-size="12" text-anchor="middle">Zustand 기반 필터 상태 관리 생성기</text>
+  <text x="450" y="675" font-family="Arial" font-size="12" text-anchor="middle">update, initialize 메소드 자동 생성</text>
+  
+  <rect x="220" y="690" width="460" height="60" rx="5" fill="#dee2e6" stroke="#495057" stroke-width="1" />
+  <text x="450" y="705" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">sorterStoreCreator</text>
+  <text x="450" y="725" font-family="Arial" font-size="12" text-anchor="middle">Zustand 기반 정렬 상태 관리 생성기</text>
+  <text x="450" y="745" font-family="Arial" font-size="12" text-anchor="middle">정렬 상태, update, initialize 메소드 자동 생성</text>
+  
+  <!-- 연결선 -->
+  <!-- Page에서 Section들로 -->
+  <line x1="450" y1="160" x2="450" y2="170" stroke="#343a40" stroke-width="2" />
+  <line x1="450" y1="170" x2="200" y2="170" stroke="#343a40" stroke-width="2" />
+  <line x1="450" y1="170" x2="700" y2="170" stroke="#343a40" stroke-width="2" />
+  <line x1="200" y1="170" x2="200" y2="180" stroke="#343a40" stroke-width="2" />
+  <line x1="450" y1="170" x2="450" y2="180" stroke="#343a40" stroke-width="2" />
+  <line x1="700" y1="170" x2="700" y2="180" stroke="#343a40" stroke-width="2" />
+  
+  <!-- HeaderSection에서 상세로 -->
+  <line x1="200" y1="260" x2="200" y2="280" stroke="#1971c2" stroke-width="2" />
+  
+  <!-- FilterSection에서 상세로 -->
+  <line x1="450" y1="260" x2="450" y2="280" stroke="#2b8a3e" stroke-width="2" />
+  
+  <!-- TableSectionCopy에서 상세로 -->
+  <line x1="700" y1="260" x2="700" y2="280" stroke="#e67700" stroke-width="2" />
+  
+  <!-- filterStoreCreator 연결 -->
+  <line x1="450" y1="540" x2="450" y2="570" stroke="#0b7285" stroke-width="1" />
+  <line x1="450" y1="570" x2="320" y2="570" stroke="#0b7285" stroke-width="1" />
+  <line x1="320" y1="570" x2="320" y2="650" stroke="#0b7285" stroke-width="1" />
+  <line x1="320" y1="650" x2="220" y2="650" stroke="#0b7285" stroke-width="1" />
+  
+  <!-- sorterStoreCreator 연결 -->
+  <line x1="700" y1="540" x2="700" y2="580" stroke="#d9480f" stroke-width="1" />
+  <line x1="700" y1="580" x2="580" y2="580" stroke="#d9480f" stroke-width="1" />
+  <line x1="580" y1="580" x2="580" y2="720" stroke="#d9480f" stroke-width="1" />
+  <line x1="580" y1="720" x2="220" y2="720" stroke="#d9480f" stroke-width="1" />
+  
+  <!-- 드로어 부분 제거 -->
+</svg>
